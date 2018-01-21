@@ -1,4 +1,4 @@
-const educational = {
+const social_fundraising = {
   {
     title:
     date:

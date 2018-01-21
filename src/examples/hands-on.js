@@ -1,4 +1,4 @@
-const educational = {
+const hands_on = [
   {
     title:
     date:
@@ -83,4 +83,4 @@ const educational = {
       email:
     }
   }
-}
+]
