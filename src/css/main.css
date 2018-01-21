@@ -1,0 +1,25 @@
+body {
+  background-image: url("../../public/img/background-image-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  body ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 70px; }
+    body ul li {
+      font-size: 25px;
+      display: inline;
+      float: right; }
+      body ul li a {
+        text-decoration: none;
+        display: block;
+        padding: 20px;
+        color: #0082d8; }
+      body ul li a:hover {
+        color: blue; }
+      body ul li a:active {
+        background-color: gray; }
+
+/*# sourceMappingURL=main.css.map */
