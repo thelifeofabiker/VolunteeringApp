@@ -1,5 +1,4 @@
 import React from 'react';
-import './css/main.css';
 import LocationForm from './LocationForm';
 import BrowseEventsSection from './BrowseEventsSection';
 
@@ -14,4 +13,4 @@ render() {
 }
 }
 
-export default VolunteeringApp;
+export default VolunteerEvents;
