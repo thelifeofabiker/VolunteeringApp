@@ -1,86 +1,36 @@
 const hands_on = [
   {
-    title:
-    date:
+    title: "Disaster Relief Compassion Missions",
+    date: "Works with your schedule.",
+    type: "hands on",
     location {
-      street:
-      city:
-      state:
+      street: "Main Street",
+      city: "Miami",
+      state: "Fl",
     },
-    organization-name:
-    description:
+    organization-name: "CitiIMPACT Miami",
+    description: "As a catalyst of HELP and HOPE, CitiIMPACT Ministriesmobilizes collaborative partnerships between local churches, groups and individuals for greater effectiveness in meeting human needs.",
     contact-information {
-      name:
-      phone:
-      email:
+      name: "Fransico Ramirez",
+      phone: 305-564-8763,
+      email: "ramifran@gmail.com"
     }
   },
 
   {
-    title:
-    date:
+    title: "Volunteer with Swim for MS!",
+    date: "Jun 30, 2018",
     location {
-      street:
-      city:
-      state:
+      street: "no street",
+      city: "Miami"
+      state: "Fl",
     },
-    organization-name:
-    description:
+    organization-name: "Multiple Sclerosis Association of America MSAA",
+    description: "Swim for MS encourages volunteers to create their own swim challenge while recruiting online donations to support the Multiple Sclerosis Association of America (MSAA).",
     contact-information {
-      name:
-      phone:
-      email:
-    }
-  },
-
-  {
-    title:
-    date:
-    location {
-      street:
-      city:
-      state:
-    },
-    organization-name:
-    description:
-    contact-information {
-      name:
-      phone:
-      email:
-    }
-  },
-
-  {
-    title:
-    date:
-    location {
-      street:
-      city:
-      state:
-    },
-    organization-name:
-    description:
-    contact-information {
-      name:
-      phone:
-      email:
-    }
-  },
-
-  {
-    title:
-    date:
-    location {
-      street:
-      city:
-      state:
-    },
-    organization-name:
-    description:
-    contact-information {
-      name:
-      phone:
-      email:
+      name: "MSAA",
+      phone: *423,
+      email: "msaaswim@gmail.com"
     }
   }
 ]
