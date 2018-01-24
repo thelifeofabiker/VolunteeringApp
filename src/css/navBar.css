@@ -1,3 +1,34 @@
+.inav {
+  background-color: black;
+}
 
+.inav img {
+  float: left;
+  width: 100px;
+  height: 50px;
+}
 
-/*# sourceMappingURL=navBar.css.map */
+.inav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 70px;
+}
+
+.inav ul li {
+  font-size: 25px;
+  display: inline;
+  float: right;
+}
+
+.inav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  color: white;
+}
+
+.inav ul li a:hover {
+  color: blue;
+}
