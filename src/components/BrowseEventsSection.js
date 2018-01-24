@@ -3,7 +3,9 @@ import React from 'react';
 
 class BrowseEventsSection extends React.Component {
   render() {
-    return false
+    return (
+      <h1> Browsing some volunteer events </h1>
+    )
   }
 }
 
