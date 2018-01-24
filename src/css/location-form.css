@@ -1,0 +1,53 @@
+body {
+  letter-spacing: 1px; }
+.location-form {
+  margin: 20px;
+  width: 650px;
+  border-radius: 1px;
+  background: white;}
+  .location-form .form-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 90px;
+    font-size: 22px;
+    font-weight: bold;
+    background: lightblue;
+    border-radius: 4px 4px 0 0;
+    color: black; }
+  .location-form input {
+    font-size: .900rem;
+    padding: 5px 15px; }
+  .location-form div {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 20px 10px 20px; }
+    .location-form div label {
+      width: 35%;
+      margin: 0 0 0 15px;
+      padding: 5px 5px 5px 15px;
+      color: grey;
+      font-size: 14px;
+      line-height: 1.8rem; }
+    .location-form div input[type="text"] {
+      width: 65%;
+      margin: 0 25px 0 15px;
+      height: 35px;
+      background: lightgrey;
+      color: black; }
+  .location-form footer {
+    margin: 0 45px;
+    padding: 15px 10px 25px 10px;
+    text-align: center;
+    border-top: 2px solid #e8ebed; }
+    .location-form footer input[type="submit"] {
+      display: inline-block;
+      cursor: pointer;
+      width: 60%;
+      height: 40px;
+      background: lightblue;
+      color: black;
+      line-height: 1rem; }
+      .location-form footer input[type="submit"]:hover {
+        background: #e17900; }
