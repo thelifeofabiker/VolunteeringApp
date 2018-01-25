@@ -1,6 +1,6 @@
 import React from 'react';
 
-class BrowseEventsSection extends React.Component {
+class Homepage extends React.Component {
   render() {
     return (
       <h1> Homepage </h1>
@@ -8,4 +8,4 @@ class BrowseEventsSection extends React.Component {
   }
 }
 
-export default BrowseEventsSection;
+export default Homepage;

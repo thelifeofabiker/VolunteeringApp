@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
+import NavBar from './components/NavBar';
 import Homepage from './components/Homepage';
 import VolunteerEvents from './components/VolunteerEvents';
 import SubmitForm from './components/SubmitForm';
@@ -10,20 +11,10 @@ const Root = () => {
   return (
     <BrowserRouter>
       <div>
-        <nav>
-          <div>
-            <Link to="/Home">Home</Link>
-          </div>
-          <div>
-            <Link to="/Volunteer-Events">Volunteer Events</Link>
-          </div>
-          <div>
-            <Link to="/For-Organizers">For Organizers</Link>
-          </div>
-        </nav>
-        <Route exact path="/Home" Component={ Homepage } />
-        <Route path="/Volunteer-Events" Component={ VolunteerEvents } />
-        <Route path="/For-Organizers" Component={ ForOrganizers } />
+        <NavBar/>
+        <Route exact path="/Home" component={ Homepage } />
+        <Route path="/Volunteer-Events" component={ VolunteerEvents } />
+        <Route path="/For-Organizers" component={ ForOrganizers } />
       </div>
     </BrowserRouter>
   )
