@@ -27,6 +27,17 @@ class BrowseEventsSection extends React.Component {
       <div>
         <h1> Browsing some volunteer events </h1>
         <table>
+              <tr>
+                <td>Event Name</td>
+                <td>City</td>
+                <td>Description</td>
+                <td>Date</td>
+                <td>City</td>
+                <td>State</td>
+                <td>Type</td>
+                <td>Contact Name</td>
+                <td>Contact Email</td>
+              </tr>
           {event_records.map((event_record) => {
             return (
               <tr>

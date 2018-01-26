@@ -1,61 +1,81 @@
 import React from 'react';
-
-
-
+import $ from 'jquery';
 
 class SubmitForm extends React.Component{
+  createEvent(e) {
+    e.preventDefault();
+    // alert(this.nameInput.value);
 
-  constructor(props) {
-    super(props);
-    this.state = {
-
-      "Event Name": "Wyncode Cleanup 1",
-      "Date": "2018-01-29",
-      "Description": "Start to help",
-      "City": "Miami",
-      "State": "FL",
-      "Type": "Social",
-      "Contact Email": "johnsmith@gmail.com",
-      "Contact Name": "John Smith"
-    };
-
-    setInterval(() => {
-      this.setState(previousState => {
-        return { isShowingText: !previousState.isShowingText };
-      });
-    }, 1000);
+    $.ajax({
+      type: "POST",
+      url: "https://api.airtable.com/v0/app9VPF6XSTZlqqva/Events?api_key=key4Z1WxfNWgWqpiO",
+      data: {
+        "fields": {
+          "Event Name": this.nameInput.value,
+          "Date": this.dateInput.value,
+          "Description": this.descriptionInput.value,
+          "Type": this.typeInput.value,
+          "City": this.cityInput.value,
+          "State": this.stateInput.value,
+          "Contact Name": this.contactNameInput.value,
+          "Contact Email": this.contactEmailInput.value,
+        }
+      },
+      dataType: "json"
+    }).done(function(data, _t, _x) {
+      alert("Thank you for submitting your event!");
+      this.resetFields();
+    }.bind(this));
   }
 
-
-
-
-
+  resetFields() {
+    this.nameInput.value = null;
+    this.dateInput.value = null;
+    this.descriptionInput.value = null;
+    this.typeInput.value = null;
+    this.cityInput.value = null;
+    this.stateInput.value = null;
+    this.contactNameInput.value = null;
+    this.contactEmailInput.value = null;
+  }
 
   render() {
     return (
-      <form id="inputForm" class="" action="index.html" method="post">
+      <form id="inputForm" onSubmit={ (e) => { this.createEvent(e) } }>
         <fieldset>
           <legend>Add Event </legend>
 
           <p>
-            <label for="name">Event Name:</label>
-            <input type="text" name="name" id="name"/>
+            <label htmlFor="name">Event Name:</label>
+            <input type="text" name="name" id="name" ref={ (input) => { this.nameInput = input } }/>
           </p>
           <p>
-            <label for="date">Date:</label>
-            <input type="date" name="date" id="date"/>
+            <label htmlFor="date">Date:</label>
+            <input type="date" name="date" id="date" ref={ (input) => { this.dateInput = input } }/>
           </p>
           <p>
-            <label for="location">Location:</label>
-            <input type="location" name="location" id="location"/>
+            <label htmlFor="city">City:</label>
+            <input type="text" name="city" id="city" ref={ (input) => { this.cityInput = input } }/>
           </p>
           <p>
-            <label for="description">Short Description:</label>
-            <input type="text" name="description" id="description"/>
+            <label htmlFor="state">State:</label>
+            <input type="text" name="state" id="state" ref={ (input) => { this.stateInput = input } }/>
           </p>
           <p>
-            <label for="email">Contact Email:</label>
-            <input type="email" name="email" id="email"/>
+            <label htmlFor="description">Short Description:</label>
+            <input type="text" name="description" id="description" ref={ (input) => { this.descriptionInput = input } }/>
+          </p>
+          <p>
+            <label htmlFor="type">Type:</label>
+            <input type="text" name="type" id="type" ref={ (input) => { this.typeInput = input } }/>
+          </p>
+          <p>
+            <label htmlFor="contactName">Contact Name:</label>
+            <input type="text" name="contactName" id="contactName" ref={ (input) => { this.contactNameInput = input } }/>
+          </p>
+          <p>
+            <label htmlFor="contactEmail">Contact Email:</label>
+            <input type="email" name="contactEmail" id="contactEmail" ref={ (input) => { this.contactEmailInput = input } }/>
           </p>
           <p>
             <input type="submit" name="save"/>

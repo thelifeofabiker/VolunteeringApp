@@ -11,7 +11,7 @@ const Root = () => {
     <BrowserRouter>
       <div>
         <NavBar/>
-        <Route exact path="/Home" component={ Homepage } />
+        <Route exact path="/" component={ Homepage } />
         <Route path="/Volunteer-Events" component={ VolunteerEvents } />
         <Route path="/For-Organizers" component={ SubmitForm } />
       </div>
