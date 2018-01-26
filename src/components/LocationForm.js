@@ -24,12 +24,12 @@ class LocationForm extends React.Component {
       <form className="location-form" onSubmit={(e) => this.getVolunteerLocation(e)}>
         <h1 className="form-title"> Search for volunteer events near you</h1>
         <div>
-          <label htmlFor="city">Enter city, state:</label>
-          <input type="text" id="city" name="city" placeholder="ex: Los Angeles, CA" ref={(input) => this.locationFormInput = input}/>
+          <label htmlFor="city">Enter City:</label>
+          <input type="text" id="city" name="city" placeholder="ex: Los Angeles" ref={(input) => this.locationFormInput = input}/>
         </div>
-        <footer>
+        <div>
           <input type="submit" value="Find volunteer events"/>
-        </footer>
+        </div>
       </form>
     )
   }

@@ -47,7 +47,7 @@ class BrowseEventsSection extends React.Component {
 
     return (
       <div>
-        <h1> Browse Events </h1>
+        <h1 className="browseEvents"> Browse Events </h1>
         <table>
               <tr>
                 <td>Event Name</td>
