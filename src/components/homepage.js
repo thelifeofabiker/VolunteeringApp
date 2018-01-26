@@ -6,7 +6,7 @@ class HomePage extends React.Component {
     return (
       <div>
         <div className="mySlides">
-          <div className="text"></div>
+
         </div>
 
 
