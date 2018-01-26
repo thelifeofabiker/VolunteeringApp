@@ -1,6 +1,13 @@
 import React from 'react';
 import $ from 'jquery';
 
+
+<div>
+  <p>Let us know about your next event by submitting in the form below!</p>
+  <p>Our partnerships in the communities help us get your event the most exposure and the most hands at your next event. </p>
+</div>
+
+
 class SubmitForm extends React.Component{
   createEvent(e) {
     e.preventDefault();
