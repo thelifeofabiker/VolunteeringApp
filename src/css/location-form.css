@@ -12,6 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 50px;
+    font-family: 'Josefin Sans', sans-serif;
     font-size: 22px;
     font-weight: bold;
     background: #e17900;
@@ -30,7 +31,7 @@ body {
       padding: 5px 5px 5px 15px;
       text-align: center;
       color: grey;
-      font-size: 23px;
+      font-size: 20px;
       line-height: 1.8rem; }
     .location-form div input[type="text"] {
       width: 65%;
@@ -43,13 +44,13 @@ body {
     padding: 15px 10px 25px 10px;
     text-align: center;
     border-top: 2px solid #e8ebed; }
-    .location-form footer input[type="submit"] {
+    .location-form div input[type="submit"] {
       display: inline-block;
       cursor: pointer;
-      width: 60%;
+      width: 30%;
       height: 40px;
-      background: lightblue;
-      color: black;
+      background: #50514F;
+      color: white;
       line-height: 1rem; }
-      .location-form footer input[type="submit"]:hover {
+      .location-form div input[type="submit"]:hover {
         background: #e17900; }

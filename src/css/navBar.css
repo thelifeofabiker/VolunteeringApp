@@ -10,7 +10,8 @@ nav {
 }
 
 nav div {
-  font-size: 25px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
   display: inline;
   position: relative;
   float: left;
