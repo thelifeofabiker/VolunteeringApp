@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar';
-import Homepage from './components/Homepage';
+import Homepage from './components/HomePage';
 import NavBar from './components/NavBar';
 //TODO need to double check navbar
 
