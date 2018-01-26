@@ -8,13 +8,25 @@ class VolunteerEvents extends React.Component {
   constructor() {
     super();
     this.state = {
-      city: "Miami",
-      event_records: []
+      city: null,
+      event_records: [],
+      initialized: false,
     }
     this.getEventResults = this.getEventResults.bind(this);
     this.setEventResults = this.setEventResults.bind(this);
     this.fetchResults = this.fetchResults.bind(this);
   }
+
+  componentDidMount() {
+    console.log("mounted!");
+    if (this.state.initialized == false) {
+      this.fetchResults(null);
+      this.setState({
+        initialized: true
+      });
+    }
+  }
+
   getEventResults(result){
     this.setState({
       city: result
@@ -34,9 +46,14 @@ class VolunteerEvents extends React.Component {
     this.setState({
       city: result
     })
-    console.log(result);
+    console.log(`result: ${result}`);
 
-    const filter = `filterByFormula=AND({City}='${result}')`
+    let filter = "";
+
+    if (result != null) {
+      filter = `filterByFormula=AND({City}='${result}')`
+    }
+
     const url = `https://api.airtable.com/v0/app9VPF6XSTZlqqva/Events?api_key=key4Z1WxfNWgWqpiO&${filter}`;
     console.log(url);
     $.ajax({
@@ -66,10 +83,10 @@ class VolunteerEvents extends React.Component {
 
 }
 
-VolunteerEvents.propTypes = {
-  city: PropTypes.array.isRequired,
-  history: PropTypes.object.isRequired,
-  location: PropTypes.object.isRequired,
-  match: PropTypes.object.isRequired
-}
+// VolunteerEvents.propTypes = {
+//   city: PropTypes.array.isRequired,
+//   history: PropTypes.object.isRequired,
+//   location: PropTypes.object.isRequired,
+//   match: PropTypes.object.isRequired
+// }
 export default VolunteerEvents;
