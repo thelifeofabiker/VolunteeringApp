@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import NavBar from './components/NavBar';
+import NavigationBar from './components/NavigationBar';
 import Homepage from './components/Homepage';
 import VolunteerEvents from './components/VolunteerEvents';
 import SubmitForm from './components/SubmitForm';
@@ -11,7 +11,7 @@ const Root = () => {
   return (
     <BrowserRouter>
       <div>
-        <NavBar/>
+        <NavigationBar/>
         <Route exact path="/Home" component={ Homepage } />
         <Route path="/Volunteer-Events" component={ VolunteerEvents } />
         <Route path="/For-Organizers" component={ ForOrganizers } />

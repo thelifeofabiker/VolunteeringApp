@@ -1,37 +1,45 @@
-const educational = [
+const sample_city = [
   {
-    title: "Youth For Understanding",
-    date: "May 2, 2018",
-    type: "educational",
-    location {
-      street: "641 S. Street NW",
-      city: "Washington",
-      state: "DC"
+    "id":"rec1234"
+    "fields:" {
+      "City": "Miami",
+      "Description": "Start to help",
+      "Date": "2018-01-29",
+      "State": "FL",
+      "Event Name": "Wyncode cleanup",
+      "Type": "educational"
+      "Contact Name": "John Smith",
+      "Contact Email": "johnsmith@gmail.com"
     },
-    organization-name: "YFU",
-    description: "Volunteers work with international teenagers and their host families, ensuring a safe and educational exchange experience for all."
-    contact-information {
-      name: "Rodrigo Perez"
-      phone: 786-343-8972,
-      email: "rodrigoperez1001@gmail.com"
-    }
+    "createdTime": "2018-01-22T00:04:47.000Z"
   },
-
   {
-    title: "Vetpreneur Pitch Competition",
-    date: "Jan 24, 2018",
-    type: "educational",
-    location {
-      street: "549 Northwest 28th Street",
-      city: "Miami",
-      state: "Fl"
+    "id": "rec5678"
+    "fields:" {
+      "City": "New York",
+      "Description": "Tutoring Time",
+      "Date": "2018-05-02",
+      "State": "NY",
+      "Event Name": "Come teach students in STEM fields",
+      "Type": "educational"
+      "Contact Name": "Sylvia Cipra",
+      "Contact Email": "sylviacipra3098@gamil.com"
     },
-    organization-name: "Wyncode",
-    description: "Join us at Wyncode Academy as Veteran Entrepreneurs pitch their ideas for a chance to win passes to VETCON 2018 and a slot to compete for a $10,000 prize at the VETCON pitch competition! Second place will receive the Vet-Tech Fellowship to attend the Founder Institute in South Florida.",
-    contact-information {
-      name: "Sylvia Cipra",
-      phone: 340-786-8967,
-      email: "sylviacipra3098@gamil.com"
-    }
+    "createdTime": "2018-01-22T00:04:47.000Z"
+  },
+  {
+    "id": "rec91011"
+    "fields:" {
+      "City": "Los Angeles",
+      "Description": "Volunteers work with international teenagers and their host families, ensuring a safe and educational exchange experience for all.",
+      "Date": "2018-03-17",
+      "State": "CA",
+      "Event Name": "Youth For Understanding",
+      "Type": "educational"
+      "Contact Name": "Rodrigo Perez",
+      "Contact Email": "rodrigoperez1001@gmail.com"
+  },
+    "createdTime": "2018-09-20T00:10:47.000Z"
   }
 ]
+export default educational;

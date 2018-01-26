@@ -1,4 +1,6 @@
 import React from 'react';
+import educational from '../educational';
+import PropTypes from 'prop-types';
 
 class EventsResults extends React.Component {
   render() {
