@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/master.css';
+import events from './volunteerEvents.js'
 
 class HomePage extends React.Component {
   render() {
@@ -12,7 +13,7 @@ class HomePage extends React.Component {
 
         <div className="goEvents">
           <h2>Helping Hands transforms volunteer recruiting, making it quick, <br /> easy and effective.</h2>
-          <button className="button" type="button" name="button"><a href="volunteerEvents.html">See Events</a></button>
+          <button className="button" type="button" name="button"><a href="/Volunteer-Events">See Events</a></button>
         </div>
 
         <div className="image"></div>
