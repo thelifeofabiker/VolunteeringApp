@@ -16,7 +16,13 @@ body {
 }
 
 .text {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    line-height: 46px;
+    font-size: 40px;
+    margin: 0 0 23px 0;
+
+  /* font-family: 'Indie Flower', cursive;
   font-weight: bold;
   color: #FAEBD7;
   font-size: 80px;
@@ -24,7 +30,7 @@ body {
   right: 10px;
   bottom: 47%;
   width: 100%;
-  text-align: center;
+  text-align: center; */
 }
 
 .goEvents {
@@ -65,6 +71,13 @@ body {
 
 }
 
+.image-events {
+  background-image: url("../img/planting_flowers.jpg");
+  height: 200px;
+  width: 100%;
+  background-position: center;
+}
+
 .aboutUs {
   background-color: white;
   height: 100%;
@@ -81,7 +94,7 @@ body {
 }
 
 footer {
-  height:100px;
+  height:150px;
   background-color: #50514F;
 }
 
@@ -89,9 +102,9 @@ footer p {
     font-family: fantasy;
     color: white;
     text-align: center;
-    margin: 0;
+    margin: 8px;
 }
 
 footer p:first-child {
-  padding: 20px;
+  padding: 6px;
 }

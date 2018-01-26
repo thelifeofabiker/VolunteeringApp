@@ -51,6 +51,7 @@ class VolunteerEvents extends React.Component {
   render() {
     return(
       <div>
+        <div className="image-events"></div>
         <LocationForm
           fetchResults= {this.fetchResults}
         />

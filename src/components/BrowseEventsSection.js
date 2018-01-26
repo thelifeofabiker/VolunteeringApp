@@ -1,6 +1,7 @@
 //section below the location form where user can view upcoming volunteer events.
 import React from 'react';
 import $ from 'jquery';
+import '../css/BrowseEventsSection.css';
 
 class BrowseEventsSection extends React.Component {
   constructor(props) {
@@ -46,7 +47,7 @@ class BrowseEventsSection extends React.Component {
 
     return (
       <div>
-        <h1> Browsing some volunteer events </h1>
+        <h1> Browse Events </h1>
         <table>
               <tr>
                 <td>Event Name</td>

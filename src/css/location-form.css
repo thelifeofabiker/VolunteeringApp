@@ -1,19 +1,20 @@
 body {
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+ }
 .location-form {
-  margin: 20px;
-  width: 650px;
+  margin: 30px;
+  width: auto;
   border-radius: 1px;
   background: white;}
   .location-form .form-title {
     width: 100%;
     display: flex;
     align-items: center;
-    text-align: center;
-    height: 90px;
+    justify-content: center;
+    height: 50px;
     font-size: 22px;
     font-weight: bold;
-    background: lightblue;
+    background: #e17900;
     border-radius: 4px 4px 0 0;
     color: black; }
   .location-form input {
@@ -27,8 +28,9 @@ body {
       width: 35%;
       margin: 0 0 0 15px;
       padding: 5px 5px 5px 15px;
+      text-align: center;
       color: grey;
-      font-size: 14px;
+      font-size: 23px;
       line-height: 1.8rem; }
     .location-form div input[type="text"] {
       width: 65%;
