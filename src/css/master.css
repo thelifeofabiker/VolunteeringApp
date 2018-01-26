@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5;
+}
+
+.mySlides {
+  background-image: url("../img/scroll.jpg");
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  top: 100px;
+}
+
+.text {
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  color: #FAEBD7;
+  font-size: 80px;
+  position: absolute;
+  right: 10px;
+  bottom: 47%;
+  width: 100%;
+  text-align: center;
+}
+
+.goEvents {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Amatic SC', cursive;
+  background-color:#FF9F63;
+  padding: 40px;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+.button a:hover {
+  color: gray;
+}
+
+.image {
+  background-image: url("../img/som3.jpg");
+  height: 500px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.aboutUs {
+  background-color: white;
+  height: 100%;
+
+}
+
+.aboutUs p {
+  margin: 0;
+  padding: 55px;
+  font-size: 35px;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+}
+
+footer {
+  height:100px;
+  background-color: #50514F;
+}
+
+footer p {
+    font-family: fantasy;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+footer p:first-child {
+  padding: 20px;
+}

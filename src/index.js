@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import Homepage from './components/Homepage';
+import Homepage from './components/HomePage';
 import VolunteerEvents from './components/VolunteerEvents';
 import SubmitForm from './components/SubmitForm';
 import ForOrganizers from './components/ForOrganizers';
