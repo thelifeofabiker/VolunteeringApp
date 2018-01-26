@@ -48,6 +48,12 @@ class SubmitForm extends React.Component{
 
   render() {
     return (
+
+      <div>
+        <p>Let us know about your next event by submitting in the form below!</p>
+        <p>Our partnerships in the communities help us get your event the most exposure and the most hands at your next event. </p>
+
+
       <form id="inputForm" onSubmit={ (e) => { this.createEvent(e) } }>
         <fieldset>
           <legend>Add Event </legend>
@@ -89,6 +95,8 @@ class SubmitForm extends React.Component{
           </p>
         </fieldset>
       </form>
+
+      </div>
     )
   }
 }
