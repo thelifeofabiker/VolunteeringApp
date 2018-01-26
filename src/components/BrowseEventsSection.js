@@ -14,21 +14,21 @@ class BrowseEventsSection extends React.Component {
     // console.log("fetch results!!!");
     // console.log("fetch results!!!");
     // console.log("fetch results!!!");
-    // this.fetchResults();
+    this.fetchResults();
   }
 
-  // fetchResults() {
-  //   const filter = `filterByFormula=AND({City}='${this.props.city}')`
-  //   const url = `https://api.airtable.com/v0/app9VPF6XSTZlqqva/Events?api_key=key4Z1WxfNWgWqpiO&${filter}`;
-  //   console.log(url);
-  //   $.ajax({
-  //     url: `https://api.airtable.com/v0/app9VPF6XSTZlqqva/Events?api_key=key4Z1WxfNWgWqpiO&${filter}`
-  //   })
-  //   .done(function(data){
-  //     console.log(data);
-  //     this.props.setEventResults(data.records);
-  //   }.bind(this));
-  // }
+  fetchResults() {
+    // const filter = `filterByFormula=AND({City}='${this.props.city}')`
+    // const url = `https://api.airtable.com/v0/app9VPF6XSTZlqqva/Events?api_key=key4Z1WxfNWgWqpiO&${filter}`;
+    // console.log(url);
+    // $.ajax({
+    //   url: `https://api.airtable.com/v0/app9VPF6XSTZlqqva/Events?api_key=key4Z1WxfNWgWqpiO&${filter}`
+    // })
+    // .done(function(data){
+    //   console.log(data);
+    //   const initialRecords = data.records
+    // }.bind(this));
+  }
 
   render() {
     console.log(this.props);
@@ -47,7 +47,7 @@ class BrowseEventsSection extends React.Component {
 
     return (
       <div>
-        <h1 className="browseEvents"> Browse Events </h1>
+        <h1> Browse Events </h1>
         <table>
               <tr>
                 <td>Event Name</td>

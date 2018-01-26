@@ -8,7 +8,7 @@ class VolunteerEvents extends React.Component {
   constructor() {
     super();
     this.state = {
-      city: "",
+      city: "Miami",
       event_records: []
     }
     this.getEventResults = this.getEventResults.bind(this);
