@@ -5,23 +5,44 @@ import $ from 'jquery';
 class BrowseEventsSection extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = { event_records: [] };
   }
 
-  componentDidMount() {
-    $.ajax({
-      url: "https://api.airtable.com/v0/app9VPF6XSTZlqqva/Events?api_key=key4Z1WxfNWgWqpiO"
-    })
-    .done(function(data){
-      this.setState({
-        event_records: data.records
-      });
-    }.bind(this));
+  componentWillMount() {
+    // console.log("fetch results!!!");
+    // console.log("fetch results!!!");
+    // console.log("fetch results!!!");
+    // console.log("fetch results!!!");
+    // console.log("fetch results!!!");
+    // this.fetchResults();
   }
+
+  // fetchResults() {
+  //   const filter = `filterByFormula=AND({City}='${this.props.city}')`
+  //   const url = `https://api.airtable.com/v0/app9VPF6XSTZlqqva/Events?api_key=key4Z1WxfNWgWqpiO&${filter}`;
+  //   console.log(url);
+  //   $.ajax({
+  //     url: `https://api.airtable.com/v0/app9VPF6XSTZlqqva/Events?api_key=key4Z1WxfNWgWqpiO&${filter}`
+  //   })
+  //   .done(function(data){
+  //     console.log(data);
+  //     this.props.setEventResults(data.records);
+  //   }.bind(this));
+  // }
 
   render() {
-    const event_records = this.state.event_records;
+    console.log(this.props);
+    const event_records = this.props.event_records;
+    console.log(this.props.event_records);
+    // if(this.props != "") {
+    //     let filteredResults = event_records.map( (item)=>{
+    //                                                           if(item.fields["City"]== this.props.city){
+    //                                                             return item
+    //                                                           }
+    //                                                         }, []
+    //                                               )
+    //     console.log("Filtered ");
+    //     console.log(filteredResults);
+    // }
 
     return (
       <div>

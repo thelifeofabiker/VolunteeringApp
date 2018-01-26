@@ -13,7 +13,7 @@ class LocationForm extends React.Component {
     }
     else {
       const educational = this.props.city;
-      this.props.getEventResults(educational);
+      this.props.fetchResults(locationId);
 
     let path = `/volunteerLocation/${locationId}`;
     // this.props.history.push(path);
