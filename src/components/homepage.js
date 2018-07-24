@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/master.css';
-import events from './volunteerEvents.js'
+import events from './VolunteerEvents.js'
 
 class HomePage extends React.Component {
   render() {

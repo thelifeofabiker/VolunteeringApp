@@ -1,26 +1,26 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
-import NavigationBar from './components/NavigationBar';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
+
+// my files
 import Homepage from './components/HomePage';
 import NavBar from './components/NavBar';
-//TODO need to double check navbar
-
 import VolunteerEvents from './components/VolunteerEvents';
 import SubmitForm from './components/SubmitForm';
 
-const Root = () => {
-  return (
-    <BrowserRouter>
-      <div>
-        {/*<NavigationBar/>*/}
-        <NavBar/>
-        <Route exact path="/" component={ Homepage } />
-        <Route path="/Volunteer-Events" component={ VolunteerEvents } />
-        <Route path="/For-Organizers" component={ SubmitForm } />
-      </div>
-    </BrowserRouter>
-  )
-}
+class Root extends React.Component {
+  render() {
+    return (
+      <BrowserRouter>
+        <div>
+          <NavBar/>
+          <Route exact path="/" component={ Homepage } />
+          <Route path="/Volunteer-Events" component={ VolunteerEvents } />
+          <Route path="/For-Organizers" component={ SubmitForm } />
+        </div>
+      </BrowserRouter>
+    )
+  }
+};
 
-render( <Root />, document.querySelector('#app') );
+ReactDOM.render( <Root />, document.getElementById('app') );
